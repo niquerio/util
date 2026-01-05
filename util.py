@@ -7,7 +7,7 @@ import yaml
 from datetime import datetime
 
 with open("config.yaml", "r") as file:
-  config = yaml.safe_load(file)
+    config = yaml.safe_load(file)
 
 console = Console()
 def main():
@@ -23,11 +23,8 @@ def main():
     table = Table("Repo", "Latest Release")
     for repo in by_date:
         table.add_row(repo["name"], datetime.strftime(repo["date"], "%d %b %Y"))
-        
-    console.print(table)
-    
-    
 
+    console.print(table)
 
 if __name__ == "__main__":
     typer.run(main)
