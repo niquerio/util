@@ -1,6 +1,6 @@
 # Util
 
-This is a repo cli stuff I find useful.
+This is a repo for cli stuff I find useful.
 
 ## Prerequisits
 
